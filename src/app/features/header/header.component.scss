@@ -1,0 +1,85 @@
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    flex-shrink: 0;
+    background: #303746;
+    padding: 8px 24px;
+    .left-container {
+        display: flex;
+        gap: 4px;
+        align-items: flex-start;
+        .logo {
+            .logo-image {
+                width: 96px;
+                height: auto;
+            }
+        }
+    }
+    .middle-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            .menu {
+                display: flex;
+                cursor: pointer;
+                .menu-item {
+                    font-size: 16px;
+                    font-style: "Roboto";
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: 500;
+                }
+                .selected {
+                    font-weight: bold;
+                    color: #ff6b00;
+                }
+            }
+        }
+    }
+    .right-container {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 28px;
+        .social-links {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            .link {
+                width: 28px;
+                height: 28px;
+                background-color: white;
+                border-radius: 50%;
+                margin-right: 20px;
+                display: flex;
+                justify-content: center; /* horizontally center the content */
+                align-items: center;
+            }
+        }
+        .contact-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            .contact-email {
+                font-size: 14px;
+                color: white;
+                .link {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+            .phone-number {
+                font-size: 14px;
+                color: white;
+            }
+        }
+    }
+}
