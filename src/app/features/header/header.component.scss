@@ -3,10 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: fit-content;
+    height: 100px;
     flex-shrink: 0;
     background: #303746;
     padding: 8px 24px;
+    position: fixed;
+    z-index: 3;
     .left-container {
         display: flex;
         gap: 4px;
