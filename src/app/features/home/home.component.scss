@@ -68,7 +68,7 @@
                 font-size: 2.5rem;
             }
             .content {
-                color: black;
+                color: #161718;
                 font-family: "Manrope", sans-serif;
                 font-size: 18px;
                 font-style: normal;
@@ -181,5 +181,311 @@
                 line-height: 1.8rem;
             }
         }
+        .services-container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            .first-service {
+                height: 420px;
+                padding: 24px;
+                border-radius: 16px;
+                background: #303746;
+                display: flex;
+                align-items: center;
+                gap: 100px;
+                img {
+                    border-radius: 24px;
+                    height: 330px;
+                }
+                .service-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 24px 24px 24px 0;
+                    height: 400px;
+                    align-items: flex-end;
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        .service-title {
+                            font-family: Sen, sans-serif;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 1.8rem;
+                            color: #fff;
+                        }
+                        .service-text {
+                            font-family: "Manrope", sans-serif;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.8rem;
+                            color: #fff;
+                        }
+                        .equipments {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px;
+                            padding-left: 40px;
+                            .equipment {
+                                display: flex;
+                                gap: 8px;
+                                align-items: center;
+                                .dot {
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 50%;
+                                    background-color: #fff;
+                                }
+                                .product {
+                                    font-family: "Manrope", sans-serif;
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 1.8rem;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    .product-btn {
+                        width: fit-content;
+                        display: flex;
+                        padding: 12px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        border-radius: 30px;
+                        background: var(--primary-dark-green-01967-b, #b5c83e);
+                        border: 1px solid var(--Primary-Dark_green_01967B, #fff);
+                        cursor: pointer;
+                        .btn-text {
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 20px;
+                        }
+                        .btn-icon {
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center; /* horizontally center the content */
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .second-service {
+                height: 300px;
+                padding: 24px;
+                border-radius: 16px;
+                background: #303746;
+                display: flex;
+                align-items: center;
+                gap: 100px;
+                img {
+                    border-radius: 24px;
+                    height: 250px;
+                }
+                .service-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 24px 24px 24px 0;
+                    height: 300px;
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        .service-title {
+                            font-family: Sen, sans-serif;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 1.8rem;
+                            color: #fff;
+                        }
+                        .service-text {
+                            font-family: "Manrope", sans-serif;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 1.8rem;
+                            color: #fff;
+                        }
+                    }
+                    .product-btn {
+                        width: fit-content;
+                        display: flex;
+                        padding: 12px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 8px;
+                        border-radius: 30px;
+                        background: var(--primary-dark-green-01967-b, #b5c83e);
+                        border: 1px solid var(--Primary-Dark_green_01967B, #fff);
+                        cursor: pointer;
+                        .btn-text {
+                            font-size: 14px;
+                            font-weight: 700;
+                            line-height: 20px;
+                        }
+                        .btn-icon {
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center; /* horizontally center the content */
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .radar {
+        width: 200px; /* Adjust width as needed */
+        height: 200px; /* Adjust height as needed */
+        background-color: black; /* Blue background */
+        // border-radius: 50%; /* Creates a circular shape */
+        position: relative;
+    }
+
+    /* Add multiple pseudo-elements to create additional circles */
+    .radar::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        height: 50%;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 50%;
+        animation: radarAnimation 2s linear infinite; /* Apply the radar animation */
+    }
+
+    /* Additional keyframes for the radar animation */
+    @keyframes radarAnimation {
+        0% {
+            transform: translate(-50%, -50%) scale(0.1);
+            opacity: 1;
+        }
+        100% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0;
+        }
+    }
+
+    .brands-section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 24px;
+        margin-top: 40px;
+        background-color: hsl(0, 0%, 92%);
+        .heading-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .heading-text {
+                font-family: Sen, sans-serif;
+                letter-spacing: 0.03em;
+                margin-bottom: 0.3em;
+                font-weight: 700;
+                font-size: 2.5rem;
+            }
+            .sub-text {
+                font-family: "Manrope", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.8rem;
+            }
+        }
+        .logo-section {
+            display: flex;
+            gap: 10px;
+            position: relative;
+            z-index: 2;
+
+            .logo-container {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                align-items: center;
+                cursor: pointer;
+
+                .logo-image {
+                    border-radius: 50%; /* Sets the border radius to 50% of the element's width and height, creating a circle */
+                    width: 56px; /* Adjust width as needed */
+                    height: 56px; /* Adjust height as needed */
+                    object-fit: cover;
+                    transition: transform 1s ease; /* Smooth transition for transform property */
+                }
+
+                .logo-title {
+                    opacity: 0;
+                    transition: transform 0.5s ease; /* Smooth transition for transform property */
+                }
+
+                @keyframes scaleLogo {
+                    0% {
+                        transform: scale(0);
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: scale(2);
+                        opacity: 1;
+                    }
+                }
+            }
+
+            .logo-container:hover {
+                .logo-image {
+                    transform: scale(1.5);
+                }
+                .logo-title {
+                    opacity: 1;
+                    font-family: "Manrope", sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1rem;
+                    color: #161718;
+                    margin-top: 10px;
+                    transform: scale(1.5);
+                }
+            }
+        }
+    }
+}
+
+.sonar-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sonar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #303746 0%, rgba(255, 255, 255, 0) 50%);
+    animation: sonarAnimation 2s infinite;
+}
+
+@keyframes sonarAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
     }
 }
