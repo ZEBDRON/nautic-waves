@@ -1,13 +1,4 @@
-@keyframes flip {
-    0% {
-        transform: rotateY(0deg);
-    }
-    100% {
-        transform: rotateY(180deg);
-    }
-}
-
-.home-container {
+.about-us-container {
     display: flex;
     flex-direction: column;
     .vision-section {
@@ -24,8 +15,7 @@
             text-align: center;
             display: flex;
             flex-direction: column;
-            gap: 40px;
-            align-items: center;
+            gap: 80px;
         }
 
         .header-text {
@@ -33,170 +23,123 @@
             font-family: Sen, sans-serif;
             font-size: 50px;
             font-style: normal;
-            font-weight: 600;
-            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 20px;
         }
 
         .sub-text {
             color: #fff;
-            font-family: "Roboto", sans-serif;
+            font-family: "Manrope", sans-serif;
             font-size: 30px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 400;
             line-height: 40px; /*
             font-size: 1.5rem; /* Adjust font size */
         }
-        .product-btn {
-            width: fit-content;
+    }
+    .mission-section {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 16px;
+        background-color: #ebebeb;
+        img {
+            max-width: 50%;
+            height: 300px;
+        }
+        .content-section {
             display: flex;
-            padding: 12px;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            border-radius: 30px;
-            background: var(--primary-dark-green-01967-b, #b5c83e);
-            border: 1px solid var(--Primary-Dark_green_01967B, #fff);
-            margin-top: 32px;
-            cursor: pointer;
-            .btn-text {
-                font-size: 14px;
+            flex-direction: column;
+            gap: 20px;
+            .heading {
+                font-family: Sen, sans-serif;
+                letter-spacing: 0.03em;
+                margin-bottom: 0.3em;
                 font-weight: 700;
-                line-height: 20px;
+                font-size: 2.5rem;
+            }
+            .content {
+                color: #161718;
+                font-family: "Manrope", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.8rem;
+                margin-bottom: 3.5rem;
             }
         }
     }
-    .services-container {
+    .core-values {
         display: flex;
         flex-direction: column;
-        padding-top: 40px;
-        .first-service {
-            height: 420px;
-            padding: 24px;
-            background: #303746;
+        gap: 40px;
+        padding: 24px;
+        margin-top: 40px;
+        background-color: #ebebeb;
+        .heading-section {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 100px;
-            img {
-                border-radius: 24px;
-                height: 330px;
+            justify-content: center;
+            .heading-text {
+                font-family: Sen, sans-serif;
+                letter-spacing: 0.03em;
+                margin-bottom: 0.3em;
+                font-weight: 700;
+                font-size: 2.5rem;
             }
-            .service-content {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                height: 400px;
-                align-items: flex-end;
-                .content {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 28px;
-                    padding: 16px;
-                    .service-title {
-                        font-family: Sen, sans-serif;
-                        font-size: 32px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 1rem;
-                        color: #fff;
-                    }
-                    .service-text {
-                        font-family: "Manrope", sans-serif;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 1.8rem;
-                        color: #fff;
-                    }
-                    .equipments {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 8px;
-                        padding-left: 40px;
-                        .equipment {
-                            display: flex;
-                            gap: 8px;
-                            align-items: center;
-                            .dot {
-                                width: 8px;
-                                height: 8px;
-                                border-radius: 50%;
-                                background-color: #fff;
-                            }
-                            .product {
-                                font-family: "Manrope", sans-serif;
-                                font-size: 18px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: 1.8rem;
-                                color: #fff;
-                            }
-                        }
-                    }
-                }
+            .sub-text {
+                font-family: "Manrope", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.8rem;
             }
         }
-        .second-service {
-            height: 300px;
-            padding: 24px;
-            border-radius: 16px;
-            background: #303746;
+        .value-section {
             display: flex;
+            justify-content: space-evenly;
             align-items: center;
-            gap: 100px;
-            img {
-                border-radius: 24px;
-                height: 250px;
-            }
-            .service-content {
+            padding: 24px;
+            .value {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                padding: 24px 24px 24px 0;
-                height: 300px;
+                gap: 16px;
+                align-items: center;
+
+                .value-image {
+                    border-radius: 50%; /* Sets the border radius to 50% of the element's width and height, creating a circle */
+                    width: 200px; /* Adjust width as needed */
+                    height: 200px; /* Adjust height as needed */
+                    object-fit: cover;
+                    transition: transform 0.5s ease; /* Smooth transition for transform property */
+                }
+
+                .value-image:hover {
+                    animation: flip 1s ease; /* Play the flip animation on hover */
+                    /* Rotate the image 360 degrees on hover */
+                    content: url("https://media.istockphoto.com/id/1334285446/photo/engineers-are-overseeing-the-transportation-of-cargo-with-containers-inside-the-warehouse.jpg?s=612x612&w=0&k=20&c=j2i9GguY6grI7rRFMBGqBuanM5Vd_EfC2F1YVIxBbW4=");
+                }
+
                 .content {
                     display: flex;
                     flex-direction: column;
-                    gap: 12px;
-                    .service-title {
+                    gap: 8px;
+                    align-items: center;
+                    width: 200px;
+                    .value-heading {
                         font-family: Sen, sans-serif;
-                        font-size: 24px;
-                        font-style: normal;
+                        letter-spacing: 0.03em;
+                        margin-bottom: 0.3em;
                         font-weight: 700;
-                        line-height: 1.8rem;
-                        color: #fff;
+                        font-size: 24px;
                     }
-                    .service-text {
+                    .value-text {
                         font-family: "Manrope", sans-serif;
                         font-size: 18px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 1.8rem;
-                        color: #fff;
-                    }
-                }
-                .product-btn {
-                    width: fit-content;
-                    display: flex;
-                    padding: 12px;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 8px;
-                    border-radius: 30px;
-                    background: var(--primary-dark-green-01967-b, #b5c83e);
-                    border: 1px solid var(--Primary-Dark_green_01967B, #fff);
-                    cursor: pointer;
-                    .btn-text {
-                        font-size: 14px;
-                        font-weight: 700;
-                        line-height: 20px;
-                    }
-                    .btn-icon {
-                        width: 24px;
-                        height: 24px;
-                        border-radius: 50%;
-                        display: flex;
-                        justify-content: center; /* horizontally center the content */
-                        align-items: center;
+                        line-height: 1.5rem;
                     }
                 }
             }
@@ -469,20 +412,14 @@
 
                 .logo-image {
                     border-radius: 50%; /* Sets the border radius to 50% of the element's width and height, creating a circle */
-                    width: 72px; /* Adjust width as needed */
-                    height: 72px; /* Adjust height as needed */
-                    object-fit: fill;
-                    transition: transform 0.5s ease; /* Smooth transition for transform property */
+                    width: 56px; /* Adjust width as needed */
+                    height: 56px; /* Adjust height as needed */
+                    object-fit: cover;
+                    transition: transform 1s ease; /* Smooth transition for transform property */
                 }
 
                 .logo-title {
                     opacity: 0;
-                    font-family: "Manrope", sans-serif;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 1.8rem;
-                    color: #fff;
                     transition: transform 0.5s ease; /* Smooth transition for transform property */
                 }
 
@@ -501,49 +438,19 @@
             .logo-container:hover {
                 .logo-image {
                     transform: scale(1.5);
-                    margin-bottom: 8px;
                 }
                 .logo-title {
                     opacity: 1;
-                    padding: 12px;
-                    background: #303746;
-                    border-radius: 16px;
                     font-family: "Manrope", sans-serif;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 1rem;
-                    color: #fff;
+                    color: #161718;
                     margin-top: 10px;
-                    transform: scale(1);
+                    transform: scale(1.5);
                 }
             }
         }
-    }
-}
-
-.sonar-container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.sonar {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, #303746 0%, rgba(255, 255, 255, 0) 50%);
-    animation: sonarAnimation 2s infinite;
-}
-
-@keyframes sonarAnimation {
-    0% {
-        transform: scale(0);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(2);
-        opacity: 0;
     }
 }
