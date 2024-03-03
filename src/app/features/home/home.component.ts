@@ -52,4 +52,8 @@ export class HomeComponent implements OnInit {
       imageAlt: 'bain',
     },
   ];
+
+  navigateToProducts(): void {
+    window.open('/products', '_blank');
+  }
 }

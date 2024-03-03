@@ -5,7 +5,8 @@ import { HomeComponent } from './features/home/home.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    loadChildren: () =>
+      import('./features/base.module').then((m) => m.BaseModule),
   },
   { path: '**', redirectTo: '' },
 ];
