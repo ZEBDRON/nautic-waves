@@ -5,10 +5,17 @@ import { HeaderComponent } from './header/header.component';
 import { ProductsComponent } from './products/products.component';
 import { BaseRoutingModule } from './base-routing.module';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, ProductsComponent, AboutUsComponent],
+  declarations: [
+    HomeComponent,
+    HeaderComponent,
+    ProductsComponent,
+    AboutUsComponent,
+    FooterComponent,
+  ],
   imports: [CommonModule, BaseRoutingModule],
-  exports: [HomeComponent, HeaderComponent],
+  exports: [HomeComponent, HeaderComponent, FooterComponent],
 })
 export class BaseModule {}

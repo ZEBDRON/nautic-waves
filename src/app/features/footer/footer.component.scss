@@ -1,0 +1,112 @@
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 24px 40px 0 40px;
+    background-image: url("https://veepixel.com/tf/html/yawl/assets/images/nl.jpg");
+    .footer-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .contact-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .contact-header {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: Sen, sans-serif;
+                font-weight: 700;
+                line-height: 1.8rem;
+                color: #fff;
+            }
+            .contact-details {
+                display: flex;
+                justify-content: center;
+                gap: 8px;
+                flex-direction: column;
+                .contact {
+                    display: flex;
+                    gap: 10px;
+                    color: #fff;
+                    align-items: center;
+                    .link {
+                        width: 28px;
+                        height: 28px;
+                        color: white;
+                        border-radius: 50%;
+                        background-color: black;
+                        display: flex;
+                        justify-content: center; /* horizontally center the content */
+                        align-items: center;
+                    }
+                    .text {
+                        color: #fff;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 40px;
+                        a {
+                            color: white;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+        .logo {
+            margin-right: 56px;
+            .logo-image {
+                width: 196px;
+                height: auto;
+            }
+        }
+        .company {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .company-header {
+                font-size: 20px;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-family: Sen, sans-serif;
+                font-weight: 700;
+                line-height: 1.8rem;
+                color: #fff;
+            }
+            .company-text {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                flex-direction: column;
+                cursor: pointer;
+                .company-item {
+                    color: #fff;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+    .hor-line {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin-top: 16px;
+    }
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: 0;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 40px;
+    }
+}
