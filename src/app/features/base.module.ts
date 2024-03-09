@@ -7,6 +7,7 @@ import { BaseRoutingModule } from './base-routing.module';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsServicesComponent } from './products-services/products-services.component';
+import { BrandsComponent } from './brands/brands.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProductsServicesComponent } from './products-services/products-services
     AboutUsComponent,
     FooterComponent,
     ProductsServicesComponent,
+    BrandsComponent,
   ],
   imports: [CommonModule, BaseRoutingModule],
   exports: [HomeComponent, HeaderComponent, FooterComponent],

@@ -1,0 +1,38 @@
+<div class="main-container">
+  <nautic-header></nautic-header>
+  <div class="brands-section">
+    <div class="heading-section">
+      <div class="heading-text">Major Brands</div>
+      <div class="sub-text">
+        Brands that have been trusted by our clients for years
+      </div>
+    </div>
+    <div class="sonar-container">
+      <!-- <div class="sonar"></div> -->
+      <div class="logo-section">
+        <div class="logo-container" *ngFor="let brand of majorBrands">
+          <img class="logo-image" [src]="brand.logo" />
+          <div class="logo-title">{{ brand.name }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="other-brands">
+    <div class="heading-section">
+      <div class="heading-text">Other Brands</div>
+      <div class="sub-text">
+        Brands that have been trusted by our clients for years
+      </div>
+    </div>
+    <div class="sonar-container">
+      <!-- <div class="sonar"></div> -->
+      <div class="logo-section">
+        <div class="logo-container" *ngFor="let brand of majorBrands">
+          <img class="logo-image" [src]="brand.logo" />
+          <div class="logo-title">{{ brand.name }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nautic-footer></nautic-footer>
+</div>

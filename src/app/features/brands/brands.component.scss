@@ -1,0 +1,107 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.brands-section {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    padding: 40px;
+    margin-top: 115px;
+    background-color: hsl(0, 0%, 92%);
+    .heading-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .heading-text {
+            font-family: Sen, sans-serif;
+            letter-spacing: 0.03em;
+            margin-bottom: 0.3em;
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+        .sub-text {
+            font-family: "Manrope", sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.8rem;
+        }
+    }
+    .logo-section {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        z-index: 2;
+        min-height: 360px;
+        height: 100%;
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            align-items: center;
+            cursor: pointer;
+            margin: 0 20px;
+
+            .logo-image {
+                // border-radius: 50%; /* Sets the border radius to 50% of the element's width and height, creating a circle */
+                width: 80px; /* Adjust width as needed */
+                height: 80px; /* Adjust height as needed */
+                object-fit: fill;
+                transition: scaleLogo 1s ease; /* Smooth transition for transform property */
+            }
+
+            .logo-title {
+                text-align: center;
+                opacity: 0;
+                font-family: "Manrope", sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.8rem;
+                color: #fff;
+            }
+
+            @keyframes scaleLogo {
+                0% {
+                    transform: scale(0);
+                    opacity: 1;
+                }
+                100% {
+                    transform: scale(1);
+                    opacity: 1;
+                }
+            }
+        }
+
+        .logo-container:hover {
+            .logo-image {
+                transform: scale(1.2);
+                margin-bottom: 8px;
+            }
+            .logo-title {
+                opacity: 1;
+                padding: 12px;
+                background: #303746;
+                border-radius: 16px;
+                font-family: "Manrope", sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1rem;
+                color: #fff;
+                margin-top: 10px;
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.other-brands {
+    @extend .brands-section;
+    margin-top: 40px !important;
+}
