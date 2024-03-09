@@ -1,38 +1,36 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .products-section {
     display: flex;
     flex-direction: column;
+    margin-top: 85px;
+    gap: 32px;
     .header-section {
-        img {
-            width: 100%;
-            height: 600px;
-            display: block;
-        }
-        .overlay-text {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 80px;
-        }
-
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+        height: 128px;
+        padding: 40px 24px 0 24px;
+        background: #ebebeb;
         .header-text {
-            color: #ffff;
+            color: #1a1a1a;
             font-family: Sen, sans-serif;
-            font-size: 50px;
+            font-size: 32px;
             font-style: normal;
-            font-weight: 600;
+            font-weight: 700;
             line-height: 20px;
         }
 
         .sub-text {
-            color: #fff;
+            color: #1a1a1a;
             font-family: "Roboto", sans-serif;
-            font-size: 30px;
+            font-size: 16px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: 600;
             line-height: 40px; /*
             font-size: 1.5rem; /* Adjust font size */
         }
@@ -56,6 +54,25 @@
             flex-direction: column;
             gap: 20px;
             padding: 24px;
+            position: relative;
+            .sale {
+                position: absolute;
+                top: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #fa6d02;
+                width: 64px;
+                padding: 4px 8px;
+                .sale-text {
+                    color: #fff;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.4rem;
+                }
+            }
             img {
                 transition: transform 0.3s ease;
                 border-radius: 16px;
@@ -67,6 +84,7 @@
             .content {
                 display: flex;
                 flex-direction: column;
+                align-items: center;
                 gap: 10px;
                 .product-heading {
                     font-family: "Manrope", sans-serif;

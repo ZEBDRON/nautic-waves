@@ -22,6 +22,7 @@ const routes: Routes = [
     path: 'about-us',
     component: AboutUsComponent,
   },
+  { path: 'products/:page', component: ProductsComponent },
   {
     path: '**',
     redirectTo: '',

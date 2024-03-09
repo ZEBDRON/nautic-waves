@@ -13,25 +13,16 @@
         <div
           class="product"
           *ngFor="let item of prodcuts"
+          (click)="showProducts(item.page)"
           [style.backgroundImage]="
             'url(' +
-            'https://images.pexels.com/photos/327337/pexels-photo-327337.jpeg?auto=compress&cs=tinysrgb&w=800' +
+            'https://media.istockphoto.com/id/916076908/photo/supply-vessel.jpg?s=612x612&w=0&k=20&c=CeI3Qp3h7QwdJBh3vISuYQ_rCw295LLPWj5ZnKtjTuE=' +
             ')'
           "
         >
           <div class="product-header">
-            {{ item }}
+            {{ item.name }}
           </div>
-          <!-- <div class="content">
-            <div class="product-heading">
-              Navigation and Communication Equipment
-            </div>
-            <div class="product-text">
-              An Emergency Steering System which derives its power from a
-              safeguarded backup DC power supply. In this way, the vessel can be
-              safely steered when the main power has failed.
-            </div>
-          </div> -->
         </div>
       </div>
     </div>

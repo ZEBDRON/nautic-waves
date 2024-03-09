@@ -1,5 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { NavigationStart, Router } from '@angular/router';
+import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
+import {
+  Products,
+  ProductsNameMap,
+} from 'src/app/core/constants/products.constants';
 
 @Component({
   selector: 'app-products',
@@ -7,8 +11,18 @@ import { NavigationStart, Router } from '@angular/router';
   styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent implements OnInit {
-  @Input() productIndex = 0;
-  constructor(private router: Router) {}
+  activePage = Products.Navigation;
+  title = ProductsNameMap[this.activePage];
+  productsMap = ProductsNameMap;
+  constructor(private router: Router, private route: ActivatedRoute) {
+    this.route.params.subscribe((params) => {
+      console.log(params['page']);
+      if (params['page']) {
+        this.activePage = params['page'];
+        this.title = ProductsNameMap[this.activePage];
+      }
+    });
+  }
 
   ngOnInit() {
     this.router.events.subscribe((event: any) => {
