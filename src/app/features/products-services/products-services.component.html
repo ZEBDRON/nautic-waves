@@ -1,0 +1,40 @@
+<div class="main-container">
+  <nautic-header></nautic-header>
+  <div class="products-services-container">
+    <div class="products-section">
+      <div class="header">
+        <div class="heading-text">Products And Services</div>
+        <div class="sub-text">
+          Offering informed consultancy to navigate equipment selection and
+          industry regulations.
+        </div>
+      </div>
+      <div class="products-container">
+        <div
+          class="product"
+          *ngFor="let item of prodcuts"
+          [style.backgroundImage]="
+            'url(' +
+            'https://images.pexels.com/photos/327337/pexels-photo-327337.jpeg?auto=compress&cs=tinysrgb&w=800' +
+            ')'
+          "
+        >
+          <div class="product-header">
+            {{ item }}
+          </div>
+          <!-- <div class="content">
+            <div class="product-heading">
+              Navigation and Communication Equipment
+            </div>
+            <div class="product-text">
+              An Emergency Steering System which derives its power from a
+              safeguarded backup DC power supply. In this way, the vessel can be
+              safely steered when the main power has failed.
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <nautic-footer></nautic-footer>
+</div>

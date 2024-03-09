@@ -54,6 +54,6 @@ export class HomeComponent implements OnInit {
   ];
 
   navigateToProducts(): void {
-    window.open('/products', '_blank');
+    window.open('/products-services', '_blank');
   }
 }

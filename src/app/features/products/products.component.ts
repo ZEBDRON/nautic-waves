@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NavigationStart, Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,7 @@ import { NavigationStart, Router } from '@angular/router';
   styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent implements OnInit {
+  @Input() productIndex = 0;
   constructor(private router: Router) {}
 
   ngOnInit() {

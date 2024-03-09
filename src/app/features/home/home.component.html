@@ -1,49 +1,20 @@
-<nautic-header></nautic-header>
-<div class="home-container">
-  <div class="vision-section">
-    <img
-      src="https://images.pexels.com/photos/7519244/pexels-photo-7519244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      alt="Vision"
-    />
-    <div class="overlay-text">
-      <div class="header-text">NAVIGATION INNOVATION</div>
-      <div class="sub-text">
-        Pioneers in Marine Navigation & Control Systems for Commercial and
-        Defence Vessels
-      </div>
-      <div class="product-btn" (click)="navigateToProducts()">
-        <div class="btn-text">View Products</div>
-      </div>
-    </div>
-  </div>
-  <div class="services-container">
-    <div class="first-service">
+<div class="main-container">
+  <nautic-header></nautic-header>
+  <div class="home-container">
+    <div class="vision-section">
       <img
-        class="logo-image"
-        src="https://media.istockphoto.com/id/510079986/photo/inspector-at-commercial-dock.jpg?s=612x612&w=0&k=20&c=_NZwnojYQZtlXXoHkKtx1_iTDucXj2z_XmWN7I2WyNM="
+        src="https://images.pexels.com/photos/7519244/pexels-photo-7519244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Vision"
       />
-      <div class="service-content">
-        <div class="content">
-          <div class="service-title">Nautic Waves Marine</div>
-          <div class="service-text">
-            Nautic Waves Marine is a premier provider of marine equipment
-            trading and services. With a dedication to excellence and a
-            commitment to serving the maritime industry, we offer a
-            comprehensive range of high-quality marine equipment and reliable
-            services to support the needs of Yacht/ship owners, operators, and
-            other stakeholders. Our mission is to contribute to the efficiency,
-            safety, and sustainability of marine operations worldwide
-          </div>
+      <div class="overlay-text">
+        <div class="header-text">NAVIGATION INNOVATION</div>
+        <div class="sub-text">
+          Pioneers in Marine Navigation & Control Systems for Commercial and
+          Defence Vessels
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="products-section">
-    <div class="heading-section">
-      <div class="heading-text">Products And Services</div>
-      <div class="sub-text">
-        Offering informed consultancy to navigate equipment selection and
-        industry regulations.
+        <div class="product-btn" (click)="navigateToProducts()">
+          <div class="btn-text">View Products</div>
+        </div>
       </div>
     </div>
     <div class="services-container">
@@ -54,90 +25,124 @@
         />
         <div class="service-content">
           <div class="content">
-            <div class="service-title">Marine Equipment Trading</div>
+            <div class="service-title">Nautic Waves Marine</div>
             <div class="service-text">
-              We offer a diverse range of marine equipment, including but not
-              limited to:
+              Nautic Waves Marine is a premier provider of marine equipment
+              trading and services. With a dedication to excellence and a
+              commitment to serving the maritime industry, we offer a
+              comprehensive range of high-quality marine equipment and reliable
+              services to support the needs of Yacht/ship owners, operators, and
+              other stakeholders. Our mission is to contribute to the
+              efficiency, safety, and sustainability of marine operations
+              worldwide
             </div>
-            <div class="equipments">
-              <div class="equipment">
-                <div class="dot"></div>
-                <div class="product">
-                  Navigation and Communication Equipment
-                </div>
-              </div>
-              <div class="equipment">
-                <div class="dot"></div>
-                <div class="product">Safety and Lifesaving Equipment</div>
-              </div>
-              <div class="equipment">
-                <div class="dot"></div>
-                <div class="product">Engine Room Machinery and Spare Parts</div>
-              </div>
-              <div class="equipment">
-                <div class="dot"></div>
-                <div class="product">Deck Machinery and Accessories</div>
-              </div>
-              <div class="equipment">
-                <div class="dot"></div>
-                <div class="product">Electrical and Electronics Systems</div>
-              </div>
-              <div class="equipment">
-                <div class="dot"></div>
-                <div class="product">Anchoring and Mooring Solutions</div>
-              </div>
-            </div>
-          </div>
-          <div class="product-btn" (click)="navigateToProducts()">
-            <div class="btn-text">View Products</div>
-            <div class="btn-icon"><i class="pi pi-arrow-right"></i></div>
           </div>
         </div>
       </div>
-      <div class="second-service">
-        <div class="service-content">
-          <div class="content">
-            <div class="service-title">
-              Equipment Maintenance and Repair Services
-            </div>
-            <div class="service-text">
-              Our team of skilled technicians provides expert maintenance and
-              repair services to ensure the optimal performance and longevity of
-              marine equipment.
-            </div>
-          </div>
-          <div class="product-btn" (click)="navigateToProducts()">
-            <div class="btn-text">View Products</div>
-            <div class="btn-icon"><i class="pi pi-arrow-right"></i></div>
-          </div>
+    </div>
+    <div class="products-section">
+      <div class="heading-section">
+        <div class="heading-text">Products And Services</div>
+        <div class="sub-text">
+          Offering informed consultancy to navigate equipment selection and
+          industry regulations.
         </div>
-        <img
-          class="logo-image"
-          src="https://media.istockphoto.com/id/510079986/photo/inspector-at-commercial-dock.jpg?s=612x612&w=0&k=20&c=_NZwnojYQZtlXXoHkKtx1_iTDucXj2z_XmWN7I2WyNM="
-        />
       </div>
-    </div>
-  </div>
-  <div class="brands-section">
-    <div class="heading-section">
-      <div class="heading-text">Major Brands</div>
-      <div class="sub-text">
-        Brands that have been trusted by our clients for years
-      </div>
-    </div>
-    <div class="sonar-container">
-      <div class="sonar"></div>
-      <div class="logo-section">
-        <div
-          class="logo-container"
-          *ngFor="let circle of circles"
-          [style.margin]="circle.margin"
-        >
+      <div class="services-container">
+        <div class="first-service">
           <img
             class="logo-image"
-            src="https://jrc.co.in/wp-content/themes/jrc/images/blogo.png"
+            src="https://media.istockphoto.com/id/510079986/photo/inspector-at-commercial-dock.jpg?s=612x612&w=0&k=20&c=_NZwnojYQZtlXXoHkKtx1_iTDucXj2z_XmWN7I2WyNM="
           />
-          <div class="logo-title">JRC</div>
+          <div class="service-content">
+            <div class="content">
+              <div class="service-title">Marine Equipment Trading</div>
+              <div class="service-text">
+                We offer a diverse range of marine equipment, including but not
+                limited to:
+              </div>
+              <div class="equipments">
+                <div class="equipment">
+                  <div class="dot"></div>
+                  <div class="product">
+                    Navigation and Communication Equipment
+                  </div>
+                </div>
+                <div class="equipment">
+                  <div class="dot"></div>
+                  <div class="product">Safety and Lifesaving Equipment</div>
+                </div>
+                <div class="equipment">
+                  <div class="dot"></div>
+                  <div class="product">
+                    Engine Room Machinery and Spare Parts
+                  </div>
+                </div>
+                <div class="equipment">
+                  <div class="dot"></div>
+                  <div class="product">Deck Machinery and Accessories</div>
+                </div>
+                <div class="equipment">
+                  <div class="dot"></div>
+                  <div class="product">Electrical and Electronics Systems</div>
+                </div>
+                <div class="equipment">
+                  <div class="dot"></div>
+                  <div class="product">Anchoring and Mooring Solutions</div>
+                </div>
+              </div>
+            </div>
+            <div class="product-btn" (click)="navigateToProducts()">
+              <div class="btn-text">View Products</div>
+              <div class="btn-icon"><i class="pi pi-arrow-right"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="second-service">
+          <div class="service-content">
+            <div class="content">
+              <div class="service-title">
+                Equipment Maintenance and Repair Services
+              </div>
+              <div class="service-text">
+                Our team of skilled technicians provides expert maintenance and
+                repair services to ensure the optimal performance and longevity
+                of marine equipment.
+              </div>
+            </div>
+            <div class="product-btn" (click)="navigateToProducts()">
+              <div class="btn-text">View Products</div>
+              <div class="btn-icon"><i class="pi pi-arrow-right"></i></div>
+            </div>
+          </div>
+          <img
+            class="logo-image"
+            src="https://media.istockphoto.com/id/510079986/photo/inspector-at-commercial-dock.jpg?s=612x612&w=0&k=20&c=_NZwnojYQZtlXXoHkKtx1_iTDucXj2z_XmWN7I2WyNM="
+          />
+        </div>
+      </div>
+    </div>
+    <div class="brands-section">
+      <div class="heading-section">
+        <div class="heading-text">Major Brands</div>
+        <div class="sub-text">
+          Brands that have been trusted by our clients for years
+        </div>
+      </div>
+      <div class="sonar-container">
+        <!-- <div class="sonar"></div> -->
+        <div class="logo-section">
+          <div
+            class="logo-container"
+            *ngFor="let circle of circles"
+            [style.margin]="circle.margin"
+          >
+            <img
+              class="logo-image"
+              src="https://jrc.co.in/wp-content/themes/jrc/images/blogo.png"
+            />
+            <div class="logo-title">JRC</div>
+          </div>
         </div>
       </div>
     </div>

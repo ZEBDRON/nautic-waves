@@ -3,12 +3,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 85px;
     flex-shrink: 0;
-    background: #303746;
+    background-image: linear-gradient(to right, #fff, #ebebeb);
+    // background: #303746;
     padding: 8px 24px;
     position: fixed;
     z-index: 1001;
+    background-color: #ebebeb; /* Adjust transparency as needed */
+    backdrop-filter: blur(10px); /* Adjust blur amount as needed */
+    color: white;
     .left-container {
         display: flex;
         gap: 4px;
@@ -34,7 +38,7 @@
                 .menu-item {
                     font-size: 16px;
                     font-style: "Roboto";
-                    color: #fff;
+                    color: #1a1a1a;
                     text-decoration: none;
                     font-weight: 700;
                 }
@@ -71,15 +75,15 @@
             gap: 20px;
             .contact-email {
                 font-size: 14px;
-                color: white;
+                color: #1a1a1a;
                 .link {
-                    color: white;
+                    color: #1a1a1a;
                     text-decoration: none;
                 }
             }
             .phone-number {
                 font-size: 14px;
-                color: white;
+                color: #1a1a1a;
             }
         }
     }

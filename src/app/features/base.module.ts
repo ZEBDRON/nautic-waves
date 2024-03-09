@@ -6,6 +6,7 @@ import { ProductsComponent } from './products/products.component';
 import { BaseRoutingModule } from './base-routing.module';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProductsServicesComponent } from './products-services/products-services.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
     ProductsComponent,
     AboutUsComponent,
     FooterComponent,
+    ProductsServicesComponent,
   ],
   imports: [CommonModule, BaseRoutingModule],
   exports: [HomeComponent, HeaderComponent, FooterComponent],
