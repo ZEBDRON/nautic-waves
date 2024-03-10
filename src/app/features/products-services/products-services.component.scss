@@ -14,7 +14,7 @@
         justify-content: center;
         gap: 24px;
         background: #ebebeb;
-        padding: 24px;
+        padding: 40px 24px 24px 24px;
         .header {
             display: flex;
             flex-direction: column;
@@ -41,6 +41,8 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             .product {
+                background-size: contain;
+                background-position: center;
                 position: relative;
                 margin: 20px 0;
                 height: 450px;
@@ -50,25 +52,25 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
-                padding: 24px;
                 cursor: pointer;
                 transition: transform 0.2s ease;
                 .product-header {
+                    padding: 24px;
+                    background: #fa6d02;
                     position: absolute;
                     animation: moveDown 1s forwards;
-                    margin: 0 24px;
                     font-family: "Manrope", sans-serif;
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 600;
                     line-height: 1.8rem;
-                    color: #fff;
+                    color: #333; /* Dark gray */
                 }
             }
             .product:hover {
                 transform: scale(1.1);
                 .product-header {
-                    color: #ffc300;
+                    color: black;
                 }
             }
         }

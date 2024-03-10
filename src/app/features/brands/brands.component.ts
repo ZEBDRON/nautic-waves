@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { MajorBrands } from 'src/app/core/constants/products.constants';
+import {
+  MajorBrands,
+  OtherBrands,
+} from 'src/app/core/constants/products.constants';
 
 @Component({
   selector: 'app-brands',
@@ -8,4 +11,5 @@ import { MajorBrands } from 'src/app/core/constants/products.constants';
 })
 export class BrandsComponent {
   majorBrands = MajorBrands;
+  otherBrands = OtherBrands;
 }

@@ -14,11 +14,7 @@
           class="product"
           *ngFor="let item of prodcuts"
           (click)="showProducts(item.page)"
-          [style.backgroundImage]="
-            'url(' +
-            'https://media.istockphoto.com/id/916076908/photo/supply-vessel.jpg?s=612x612&w=0&k=20&c=CeI3Qp3h7QwdJBh3vISuYQ_rCw295LLPWj5ZnKtjTuE=' +
-            ')'
-          "
+          [style.backgroundImage]="'url(' + item.image + ')'"
         >
           <div class="product-header">
             {{ item.name }}
