@@ -1,58 +1,31 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .about-us-container {
     display: flex;
     flex-direction: column;
+    margin-top: 85px;
     .vision-section {
-        img {
-            width: 100%;
-            height: 600px;
-            display: block;
-        }
-        .overlay-text {
-            position: absolute;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            gap: 80px;
-        }
-
-        .header-text {
-            color: #ffff;
-            font-family: Sen, sans-serif;
-            font-size: 50px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 20px;
-        }
-
-        .sub-text {
-            color: #fff;
-            font-family: "Manrope", sans-serif;
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 40px; /*
-            font-size: 1.5rem; /* Adjust font size */
-        }
-    }
-    .mission-section {
         display: flex;
         align-items: center;
-        gap: 40px;
-        padding: 40px 16px;
+        justify-content: space-between;
+        padding: 40px 150px;
         background-color: #ebebeb;
         img {
-            max-width: 50%;
-            height: 300px;
+            border-radius: 50%; /* Sets the border radius to 50% of the element's width and height, creating a circle */
+            width: 250px; /* Adjust width as needed */
+            height: 250px; /* Adjust height as needed */
+            object-fit: cover;
         }
         .content-section {
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 8px;
+            width: 50%;
             .heading {
-                font-family: Sen, sans-serif;
+                font-family: "Syne", sans-serif;
                 letter-spacing: 0.03em;
                 margin-bottom: 0.3em;
                 font-weight: 700;
@@ -65,7 +38,40 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 1.8rem;
-                margin-bottom: 3.5rem;
+            }
+        }
+    }
+    .mission-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 150px;
+        background-color: #fff;
+        img {
+            border-radius: 50%; /* Sets the border radius to 50% of the element's width and height, creating a circle */
+            width: 300px; /* Adjust width as needed */
+            height: 300px; /* Adjust height as needed */
+            object-fit: cover;
+        }
+        .content-section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 50%;
+            .heading {
+                font-family: "Syne", sans-serif;
+                letter-spacing: 0.03em;
+                margin-bottom: 0.3em;
+                font-weight: 700;
+                font-size: 2.5rem;
+            }
+            .content {
+                color: #161718;
+                font-family: "Manrope", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 1.8rem;
             }
         }
     }
@@ -82,7 +88,7 @@
             align-items: center;
             justify-content: center;
             .heading-text {
-                font-family: Sen, sans-serif;
+                font-family: "Syne", sans-serif;
                 letter-spacing: 0.03em;
                 margin-bottom: 0.3em;
                 font-weight: 700;
@@ -98,14 +104,17 @@
         }
         .value-section {
             display: flex;
-            justify-content: space-evenly;
+            flex-wrap: wrap;
             align-items: center;
+            justify-content: space-evenly;
             padding: 24px;
             .value {
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
                 align-items: center;
+                width: 400px;
+                margin-bottom: 48px;
 
                 .value-image {
                     border-radius: 50%; /* Sets the border radius to 50% of the element's width and height, creating a circle */
@@ -126,9 +135,10 @@
                     flex-direction: column;
                     gap: 8px;
                     align-items: center;
-                    width: 200px;
+                    width: 100%;
+                    text-align: center;
                     .value-heading {
-                        font-family: Sen, sans-serif;
+                        font-family: "Syne", sans-serif;
                         letter-spacing: 0.03em;
                         margin-bottom: 0.3em;
                         font-weight: 700;
@@ -139,198 +149,7 @@
                         font-size: 18px;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 1.5rem;
-                    }
-                }
-            }
-        }
-    }
-    .products-section {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        padding: 24px;
-        margin-top: 40px;
-        background-color: #ebebeb;
-        .heading-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            .heading-text {
-                font-family: Sen, sans-serif;
-                letter-spacing: 0.03em;
-                margin-bottom: 0.3em;
-                font-weight: 700;
-                font-size: 2.5rem;
-            }
-            .sub-text {
-                font-family: "Manrope", sans-serif;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 1.8rem;
-            }
-        }
-        .services-container {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            .first-service {
-                height: 420px;
-                padding: 24px;
-                border-radius: 16px;
-                background: #303746;
-                display: flex;
-                align-items: center;
-                gap: 100px;
-                img {
-                    border-radius: 24px;
-                    height: 330px;
-                }
-                .service-content {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    padding: 24px 24px 24px 0;
-                    height: 400px;
-                    align-items: flex-end;
-                    .content {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 12px;
-                        .service-title {
-                            font-family: Sen, sans-serif;
-                            font-size: 24px;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: 1.8rem;
-                            color: #fff;
-                        }
-                        .service-text {
-                            font-family: "Manrope", sans-serif;
-                            font-size: 18px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 1.8rem;
-                            color: #fff;
-                        }
-                        .equipments {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 8px;
-                            padding-left: 40px;
-                            .equipment {
-                                display: flex;
-                                gap: 8px;
-                                align-items: center;
-                                .dot {
-                                    width: 8px;
-                                    height: 8px;
-                                    border-radius: 50%;
-                                    background-color: #fff;
-                                }
-                                .product {
-                                    font-family: "Manrope", sans-serif;
-                                    font-size: 18px;
-                                    font-style: normal;
-                                    font-weight: 400;
-                                    line-height: 1.8rem;
-                                    color: #fff;
-                                }
-                            }
-                        }
-                    }
-                    .product-btn {
-                        width: fit-content;
-                        display: flex;
-                        padding: 12px;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 8px;
-                        border-radius: 30px;
-                        background: var(--primary-dark-green-01967-b, #b5c83e);
-                        border: 1px solid var(--Primary-Dark_green_01967B, #fff);
-                        cursor: pointer;
-                        .btn-text {
-                            font-size: 14px;
-                            font-weight: 700;
-                            line-height: 20px;
-                        }
-                        .btn-icon {
-                            width: 24px;
-                            height: 24px;
-                            border-radius: 50%;
-                            display: flex;
-                            justify-content: center; /* horizontally center the content */
-                            align-items: center;
-                        }
-                    }
-                }
-            }
-            .second-service {
-                height: 300px;
-                padding: 24px;
-                border-radius: 16px;
-                background: #303746;
-                display: flex;
-                align-items: center;
-                gap: 100px;
-                img {
-                    border-radius: 24px;
-                    height: 250px;
-                }
-                .service-content {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    padding: 24px 24px 24px 0;
-                    height: 300px;
-                    .content {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 12px;
-                        .service-title {
-                            font-family: Sen, sans-serif;
-                            font-size: 24px;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: 1.8rem;
-                            color: #fff;
-                        }
-                        .service-text {
-                            font-family: "Manrope", sans-serif;
-                            font-size: 18px;
-                            font-style: normal;
-                            font-weight: 400;
-                            line-height: 1.8rem;
-                            color: #fff;
-                        }
-                    }
-                    .product-btn {
-                        width: fit-content;
-                        display: flex;
-                        padding: 12px;
-                        justify-content: center;
-                        align-items: center;
-                        gap: 8px;
-                        border-radius: 30px;
-                        background: var(--primary-dark-green-01967-b, #b5c83e);
-                        border: 1px solid var(--Primary-Dark_green_01967B, #fff);
-                        cursor: pointer;
-                        .btn-text {
-                            font-size: 14px;
-                            font-weight: 700;
-                            line-height: 20px;
-                        }
-                        .btn-icon {
-                            width: 24px;
-                            height: 24px;
-                            border-radius: 50%;
-                            display: flex;
-                            justify-content: center; /* horizontally center the content */
-                            align-items: center;
-                        }
+                        line-height: 1.8rem;
                     }
                 }
             }
@@ -367,90 +186,6 @@
         100% {
             transform: translate(-50%, -50%) scale(1);
             opacity: 0;
-        }
-    }
-
-    .brands-section {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        padding: 24px;
-        margin-top: 40px;
-        background-color: hsl(0, 0%, 92%);
-        .heading-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            .heading-text {
-                font-family: Sen, sans-serif;
-                letter-spacing: 0.03em;
-                margin-bottom: 0.3em;
-                font-weight: 700;
-                font-size: 2.5rem;
-            }
-            .sub-text {
-                font-family: "Manrope", sans-serif;
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 1.8rem;
-            }
-        }
-        .logo-section {
-            display: flex;
-            gap: 10px;
-            position: relative;
-            z-index: 2;
-
-            .logo-container {
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-                align-items: center;
-                cursor: pointer;
-
-                .logo-image {
-                    border-radius: 50%; /* Sets the border radius to 50% of the element's width and height, creating a circle */
-                    width: 56px; /* Adjust width as needed */
-                    height: 56px; /* Adjust height as needed */
-                    object-fit: cover;
-                    transition: transform 1s ease; /* Smooth transition for transform property */
-                }
-
-                .logo-title {
-                    opacity: 0;
-                    transition: transform 0.5s ease; /* Smooth transition for transform property */
-                }
-
-                @keyframes scaleLogo {
-                    0% {
-                        transform: scale(0);
-                        opacity: 1;
-                    }
-                    100% {
-                        transform: scale(2);
-                        opacity: 1;
-                    }
-                }
-            }
-
-            .logo-container:hover {
-                .logo-image {
-                    transform: scale(1.5);
-                }
-                .logo-title {
-                    opacity: 1;
-                    font-family: "Manrope", sans-serif;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 1rem;
-                    color: #161718;
-                    margin-top: 10px;
-                    transform: scale(1.5);
-                }
-            }
         }
     }
 }

@@ -1,55 +1,58 @@
-<nautic-header></nautic-header>
-<div class="about-us-container">
-  <div class="vision-section">
-    <img
-      src="https://images.pexels.com/photos/7519244/pexels-photo-7519244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-      alt="Vision"
-    />
-    <div class="overlay-text">
-      <div class="header-text">OUR VISION</div>
-      <div class="sub-text">
-        To be a leading provider of cutting-edge marine equipment, contributing
-        to safer, more efficient, and sustainable maritime operations worldwide.
-      </div>
-    </div>
-  </div>
-  <div class="mission-section">
-    <img
-      src="https://veepixel.com/tf/html/yawl/assets/images/yacht_ouline.png"
-      alt="Vision"
-    />
-    <div class="content-section">
-      <div class="heading">OUR MISSION</div>
-      <div class="content">
-        Our mission is to provide superior marine equipment solutions that
-        enhance the safety, efficiency, and performance of Yachts/vessels
-        operating in diverse maritime environments. We aim to be a trusted
-        partner for our clients by offering top-notch products, exceptional
-        customer service, and innovative solutions that cater to their unique
-        needs.
-      </div>
-    </div>
-  </div>
-
-  <div class="core-values">
-    <div class="heading-section">
-      <div class="heading-text">The Values We Stand For</div>
-      <div class="sub-text">What we at Nautic believe in above all else.</div>
-    </div>
-    <div class="value-section">
-      <div class="value" *ngFor="let item of [0, 1, 2]">
-        <img
-          class="value-image"
-          src="https://media.istockphoto.com/id/510079986/photo/inspector-at-commercial-dock.jpg?s=612x612&w=0&k=20&c=_NZwnojYQZtlXXoHkKtx1_iTDucXj2z_XmWN7I2WyNM="
-        />
+<div class="main-container">
+  <nautic-header></nautic-header>
+  <div class="about-us-container">
+    <div class="vision-section">
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="Vision"
+      />
+      <div class="content-section">
+        <div class="heading">Our Vision</div>
         <div class="content">
-          <div class="value-heading">Quality</div>
-          <div class="value-text">
-            Highest quality marine equipment from renowned manufacturers
+          To be a leading provider of cutting-edge marine equipment,
+          contributing to safer, more efficient, and sustainable maritime
+          operations worldwide.
+        </div>
+      </div>
+    </div>
+    <div class="mission-section">
+      <div class="content-section">
+        <div class="heading">Our Mission</div>
+        <div class="content">
+          Our mission is to provide superior marine equipment solutions that
+          enhance the safety, efficiency, and performance of Yachts/vessels
+          operating in diverse maritime environments. We aim to be a trusted
+          partner for our clients by offering top-notch products, exceptional
+          customer service, and innovative solutions that cater to their unique
+          needs.
+        </div>
+      </div>
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="Mission"
+      />
+    </div>
+
+    <div class="core-values">
+      <div class="heading-section">
+        <div class="heading-text">The Values We Stand For</div>
+        <div class="sub-text">What we at Nautic believe in above all else.</div>
+      </div>
+      <div class="value-section">
+        <div class="value" *ngFor="let value of coreValues">
+          <img
+            class="value-image"
+            src="https://asset.uibucket.net/html/cargopoint/assets/images/service-2.jpg"
+          />
+          <div class="content">
+            <div class="value-heading">{{ value.value }}</div>
+            <div class="value-text">
+              {{ value.content }}
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+  <nautic-footer></nautic-footer>
 </div>
-<nautic-footer></nautic-footer>
