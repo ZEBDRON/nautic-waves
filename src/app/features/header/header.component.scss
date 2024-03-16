@@ -5,9 +5,9 @@
     align-items: center;
     height: 85px;
     flex-shrink: 0;
-    // background-image: linear-gradient(to right, #fff, #ebebeb);
+    // background-image: linear-gradient(to right, #fff, #0cdedb);
     // background: #303746;
-    padding: 8px 24px;
+    padding: 8px 40px;
     position: fixed;
     z-index: 1001;
     background-color: #fff; /* Adjust transparency as needed */
@@ -15,12 +15,74 @@
     color: white;
     .left-container {
         display: flex;
-        gap: 4px;
-        align-items: flex-start;
+        gap: 64px;
+        align-items: center;
         .logo {
             .logo-image {
                 width: 96px;
                 height: auto;
+            }
+        }
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            position: relative;
+            .menu {
+                display: flex;
+                cursor: pointer;
+                .menu-item {
+                    font-size: 16px;
+                    font-family: "Roboto", sans-serif;
+                    color: #1a1a1a;
+                    text-decoration: none;
+                    font-weight: 600;
+                    padding: 6px;
+                }
+
+                .icon {
+                    margin-top: 4px;
+                    color: black;
+                }
+
+                .menu-item:hover {
+                    background-color: #add8e6; /* Blue color */
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                    border-radius: 6px;
+                }
+            }
+            .with-icon {
+                display: flex !important;
+                align-items: center !important;
+                gap: 8px !important;
+            }
+            .selected .menu-item {
+                color: #ff6b1e;
+            }
+            .dropdown-content {
+                display: none;
+                background-color: #fff;
+                position: absolute;
+                padding: 16px 0;
+                right: 32px;
+                top: 48px;
+                align-items: center;
+                border-bottom-left-radius: 16px;
+                border-bottom-right-radius: 16px;
+                .link {
+                    padding: 16px;
+                    cursor: pointer;
+                    color: #1a1a1a;
+                    width: 100%;
+                }
+                .link:hover {
+                    background-color: #ff6b1e;
+                }
+            }
+            .show {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
             }
         }
     }
@@ -28,25 +90,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .menu-bar {
-            display: flex;
-            align-items: center;
-            gap: 40px;
-            .menu {
-                display: flex;
-                cursor: pointer;
-                .menu-item {
-                    font-size: 16px;
-                    font-style: "Roboto";
-                    color: #1a1a1a;
-                    text-decoration: none;
-                    font-weight: 700;
-                }
-                .selected {
-                    color: #ff6b1e;
-                }
-            }
-        }
     }
     .right-container {
         display: flex;

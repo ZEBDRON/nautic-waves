@@ -7,20 +7,52 @@
         class="logo-image"
       />
     </div>
-  </div>
-  <div class="middle-container">
     <div class="menu-bar">
-      <div class="menu"><div class="menu-item" routerLink="/">Home</div></div>
-      <div class="menu">
-        <div class="menu-item" routerLink="/about-us">About Us</div>
+      <div
+        class="menu"
+        routerLink="/"
+        routerLinkActive="selected"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <div class="menu-item">Home</div>
       </div>
-      <div class="menu">
-        <div class="menu-item" routerLink="/products-services">
+      <div class="menu" routerLink="/about-us" routerLinkActive="selected">
+        <div class="menu-item">About Us</div>
+      </div>
+      <div class="menu with-icon">
+        <div
+          class="menu-item"
+          routerLink="/products-services"
+          routerLinkActive="selected"
+        >
           Products And Services
         </div>
+        <div class="icon" (click)="toggleDropdown()">
+          <i
+            [class]="isDropdownOpen ? 'pi pi-caret-up' : 'pi pi-caret-down'"
+            style="font-size: 1rem"
+          ></i>
+        </div>
       </div>
-      <div class="menu">
-        <div class="menu-item" routerLink="/brands">Brands</div>
+      <div class="dropdown-content" [ngClass]="{ show: isDropdownOpen }">
+        <div class="link" (click)="showProducts(products.Navigation)">
+          {{ productNameMap[products.Navigation] }}
+        </div>
+        <div class="link" (click)="showProducts(products.LifeSaving)">
+          {{ productNameMap[products.LifeSaving] }}
+        </div>
+        <div class="link" (click)="showProducts(products.FireFighting)">
+          {{ productNameMap[products.FireFighting] }}
+        </div>
+        <div class="link" (click)="showProducts(products.Indicators)">
+          {{ productNameMap[products.Indicators] }}
+        </div>
+        <div class="link" (click)="showProducts(products.Electrics)">
+          {{ productNameMap[products.Electrics] }}
+        </div>
+      </div>
+      <div class="menu" routerLink="/brands" routerLinkActive="selected">
+        <div class="menu-item">Brands</div>
       </div>
     </div>
   </div>
