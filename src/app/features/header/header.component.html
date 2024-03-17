@@ -19,12 +19,8 @@
       <div class="menu" routerLink="/about-us" routerLinkActive="selected">
         <div class="menu-item">About Us</div>
       </div>
-      <div class="menu with-icon">
-        <div
-          class="menu-item"
-          routerLink="/products-services"
-          routerLinkActive="selected"
-        >
+      <div class="menu with-icon" routerLinkActive="selected">
+        <div class="menu-item" routerLink="/products-services">
           Products And Services
         </div>
         <div class="icon" (click)="toggleDropdown()">
@@ -72,14 +68,21 @@
       </div>
     </div> -->
     <div class="contact-section">
-      <div class="contact-email">
-        <a class="link" href="mailto:sales©nauticwavesmarine.com">
-          <i class="pi pi-inbox" style="font-size: 0.85rem"></i>
-          sales©nauticwavesmarine.com</a
-        >
+      <div class="contact">
+        <div class="link">
+          <i class="pi pi-inbox" style="font-size: 1rem"></i>
+        </div>
+        <div class="text">
+          <a href="mailto:sales©nauticwavesmarine.com">
+            sales©nauticwavesmarine.com</a
+          >
+        </div>
       </div>
-      <div class="phone-number">
-        <i class="pi pi-phone" style="font-size: 0.85rem"></i> +971 50 677 5342
+      <div class="contact">
+        <div class="link">
+          <i class="pi pi-phone" style="font-size: 1rem"></i>
+        </div>
+        <div class="text">+971 50 677 5342</div>
       </div>
     </div>
   </div>

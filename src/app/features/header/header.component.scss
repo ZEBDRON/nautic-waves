@@ -114,19 +114,34 @@
         }
         .contact-section {
             display: flex;
-            align-items: center;
             gap: 20px;
-            .contact-email {
-                font-size: 14px;
-                color: #1a1a1a;
+            .contact {
+                display: flex;
+                gap: 10px;
+                color: #fff;
+                align-items: center;
                 .link {
-                    color: #1a1a1a;
-                    text-decoration: none;
+                    width: 28px;
+                    height: 28px;
+                    color: white;
+                    border-radius: 50%;
+                    background-color: coral;
+                    display: flex;
+                    justify-content: center; /* horizontally center the content */
+                    align-items: center;
                 }
-            }
-            .phone-number {
-                font-size: 14px;
-                color: #1a1a1a;
+                .text {
+                    color: #ff0000;
+                    font-family: "Roboto", sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 40px;
+                    a {
+                        color: #ff0000;
+                        text-decoration: none;
+                    }
+                }
             }
         }
     }

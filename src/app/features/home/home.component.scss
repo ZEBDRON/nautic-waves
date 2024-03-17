@@ -35,7 +35,7 @@
 
         .header-text {
             color: #ffff;
-            font-family: Sen, sans-serif;
+            font-family: "Syne", sans-serif;
             font-size: 50px;
             font-style: normal;
             font-weight: 600;
@@ -44,7 +44,7 @@
 
         .sub-text {
             color: #fff;
-            font-family: "Roboto", sans-serif;
+            font-family: "Syne", sans-serif;
             font-size: 30px;
             font-style: normal;
             font-weight: 700;
@@ -81,6 +81,7 @@
             background: #303746;
             display: flex;
             align-items: flex-start;
+            justify-content: space-evenly;
             gap: 100px;
             img {
                 border-radius: 24px;
@@ -344,7 +345,8 @@
                 .service-content {
                     display: flex;
                     flex-direction: column;
-                    justify-content: space-between;
+                    justify-content: space-around;
+                    align-items: flex-end;
                     padding: 24px 24px 24px 0;
                     height: 300px;
                     .content {
