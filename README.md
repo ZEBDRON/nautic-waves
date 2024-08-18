@@ -8,11 +8,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Build
 
-`ng build --base-href "/nautic-waves/"`
+`ng build --output-path docs --base-href "/nautic-waves/"`
 
 ## Deploy to ghpages
 
-`npx angular-cli-ghpages --dir=dist/nautic-waves/`
+`npx angular-cli-ghpages --dir=docs/nautic-waves/`
 
 # nautic-waves
 
