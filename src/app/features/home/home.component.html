@@ -3,12 +3,12 @@
   <div class="home-container">
     <div class="vision-section">
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/images%2Fcontainers4.jpg?alt=media&token=3113542a-ae12-4c4b-9953-5af847d52c6b"
+        src="https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/home%2Fhome-main.jpg?alt=media&token=18cbc49e-28bf-4d77-9d73-307d258dc66e"
         alt="Vision"
       />
       <div class="overlay-text">
-        <div class="header-text">MARITIME MASTERY</div>
-        <div class="sub-text">Empowering Maritime Excellence Worldwide</div>
+        <div class="header-text">HIGHSEAS MARINE EQUIPMENT TRADING L.L.C</div>
+        <div class="sub-text"></div>
         <div class="product-btn" (click)="navigateToProducts()">
           <div class="btn-text">View Products</div>
         </div>
@@ -114,7 +114,7 @@
           </div>
           <img
             class="logo-image"
-            src="https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/images%2Fcontainers3.jpg?alt=media&token=d5ea5d4f-66c8-406f-b01d-4d4a045fe5ad"
+            src="https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/home%2Fequipment-services.jpg?alt=media&token=3f632912-f069-4944-8f6a-5363f321a73e"
           />
         </div>
       </div>
@@ -128,12 +128,28 @@
       </div>
       <div class="sonar-container">
         <!-- <div class="sonar"></div> -->
-        <div class="logo-section">
-          <div class="logo-container" *ngFor="let brand of majorBrands">
+        <!-- <div class="logo-section">
+          <div class="logo-container" [@slide] *ngFor="let brand of majorBrands">
             <img class="logo-image" [src]="brand.logo" />
             <div class="logo-title">{{ brand.name }}</div>
           </div>
-        </div>
+        </div> -->
+        <!-- <div [@slide] *ngFor="let brand of majorBrands" class="slider">
+          <img class="logo-image" [src]="brand.logo" alt="Sliding Image" />
+        </div> -->
+        <p-carousel
+          [value]="images"
+          [numVisible]="5"
+          [numScroll]="2"
+          [autoplayInterval]="2000"
+          [circular]="true"
+        >
+          <ng-template pTemplate="item" let-image>
+            <div class="logo-container">
+              <img class="logo-image" [src]="image" alt="Image" />
+            </div>
+          </ng-template>
+        </p-carousel>
       </div>
     </div>
   </div>

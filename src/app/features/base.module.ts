@@ -8,6 +8,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProductsServicesComponent } from './products-services/products-services.component';
 import { BrandsComponent } from './brands/brands.component';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,7 @@ import { BrandsComponent } from './brands/brands.component';
     ProductsServicesComponent,
     BrandsComponent,
   ],
-  imports: [CommonModule, BaseRoutingModule],
+  imports: [CommonModule, BaseRoutingModule, CarouselModule],
   exports: [HomeComponent, HeaderComponent, FooterComponent],
 })
 export class BaseModule {}

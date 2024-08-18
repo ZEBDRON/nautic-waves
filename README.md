@@ -12,7 +12,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Deploy to ghpages
 
-`npx angular-cli-ghpages --dir=docs/nautic-waves/`
+`npx angular-cli-ghpages --dir=docs`
 
 # nautic-waves
 

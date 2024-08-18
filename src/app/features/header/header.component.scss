@@ -11,8 +11,10 @@
     position: fixed;
     z-index: 1001;
     background-color: #fff; /* Adjust transparency as needed */
-    backdrop-filter: blur(10px); /* Adjust blur amount as needed */
-    color: white;
+    background-image: url(https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/home%2Fheader-bg.jpg?alt=media&token=aeaa1e1a-2d4d-4a53-8a03-903ae9d1c089);
+    // backdrop-filter: blur(10px); /* Adjust blur amount as needed */
+    object-fit: contain;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     .left-container {
         display: flex;
         gap: 64px;
@@ -34,7 +36,7 @@
                 .menu-item {
                     font-size: 16px;
                     font-family: "Roboto", sans-serif;
-                    color: #1a1a1a;
+                    color: #fff;
                     text-decoration: none;
                     font-weight: 600;
                     padding: 6px;
@@ -42,11 +44,11 @@
 
                 .icon {
                     margin-top: 4px;
-                    color: black;
+                    color: #ffff;
                 }
 
                 .menu-item:hover {
-                    background-color: #edf1f3; /* Blue color */
+                    background-color: #1a1a1a; /* Blue color */
                     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
                     border-radius: 6px;
                 }
@@ -131,14 +133,14 @@
                     align-items: center;
                 }
                 .text {
-                    color: #ff0000;
+                    color: #ffff;
                     font-family: "Roboto", sans-serif;
                     font-size: 14px;
                     font-style: normal;
                     font-weight: 500;
                     line-height: 40px;
                     a {
-                        color: #ff0000;
+                        color: #fff;
                         text-decoration: none;
                     }
                 }

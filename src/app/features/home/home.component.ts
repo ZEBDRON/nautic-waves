@@ -1,3 +1,10 @@
+import {
+  trigger,
+  state,
+  style,
+  transition,
+  animate,
+} from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { MajorBrands } from 'src/app/core/constants/products.constants';
 import { BrandLogo } from 'src/app/models/base.model';
@@ -6,9 +13,28 @@ import { BrandLogo } from 'src/app/models/base.model';
   selector: 'nautic-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  animations: [
+    trigger('slide', [
+      state(
+        'start',
+        style({
+          transform: 'translateX(-100%)',
+        })
+      ),
+      state(
+        'end',
+        style({
+          transform: 'translateX(100%)',
+        })
+      ),
+      transition('start => end', [animate('2s linear')]),
+      transition('end => start', [animate('2s linear')]),
+    ]),
+  ],
 })
 export class HomeComponent implements OnInit {
   majorBrands = MajorBrands;
+  images = this.majorBrands.map((brand) => brand.logo);
   constructor() {}
   ngOnInit(): void {
     // this.generateRandomMargins();
