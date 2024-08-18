@@ -6,20 +6,17 @@
       <div class="sub-text">
         Nautic Waves Marine provides a wide range of Life Saving Products. All
         the life saving equipment we supply comply with the IMO and SOLAS
-        regulations
+        regulations.
       </div>
     </div>
     <div class="products-container">
-      <div class="product" *ngFor="let item of [0, 1, 2, 3, 4, 5, 6, 7]">
-        <img
-          src="https://digitalmarinesystems.com/images/products/oxygen_resuscitator.jpg"
-          alt="product"
-        />
+      <div class="product" *ngFor="let image of images">
+        <img [src]="image" alt="product" />
         <div class="content">
           <div class="sale">
             <div class="sale-text">SALE!</div>
           </div>
-          <div class="product-heading">Oxygen Resuscitator</div>
+          <!-- <div class="product-heading">Oxygen Resuscitator</div> -->
           <!-- <div class="product-text">
             An Emergency Steering System which derives its power from a
             safeguarded backup DC power supply. In this way, the vessel can be

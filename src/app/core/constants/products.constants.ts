@@ -181,3 +181,38 @@ export const OtherBrands: Brand[] = [
     logo: 'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/brands%2Fother%2Fyamaha.png?alt=media&token=bd09a13c-2ef9-4556-ba18-3d8b3d39fedc',
   },
 ];
+
+export const ProductsImageMap = {
+  [Products.Navigation]: [
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FEPIRB.jpg?alt=media&token=a7e11f15-443e-46f3-9061-e87dbc04d853',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FSART.jpg?alt=media&token=6b795045-5c0b-4e52-8582-511aa256eca9',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FIcom-Handheld-VHF-Marine-Radios.jpg?alt=media&token=bcd8402d-00e5-4adf-812e-41dcd0786435',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FGarmin-GPSMAP-1022.jpg?alt=media&token=87848d9c-e8d5-41e6-91c9-f7709a592d9d',
+  ],
+  [Products.LifeSaving]: [
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FLIFE%20RAFT.jpg?alt=media&token=f251d5ad-2612-49e6-b1dc-cdc411e61ff7',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FLIFE%20RING.jpg?alt=media&token=450de7e1-8208-44c0-8135-badfa581594c',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FLIFE%20JACKET.jpg?alt=media&token=6c72b766-8af2-4a8f-bd90-4bc0f590fbaf',
+  ],
+  [Products.FireFighting]: [
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2Ffire-extinguisher.jpg?alt=media&token=ae073db4-7570-4698-b14d-b560b7ed94de',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FFIRE%20HOSE.png?alt=media&token=a6ddf70a-37a7-4e76-a4fd-b0ae4ea4bdff',
+  ],
+  [Products.Indicators]: [
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FIkarosMOB.jpg?alt=media&token=e1222523-089a-4f39-89f8-dcf787073479',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FLTA.png?alt=media&token=5a3c8086-4d3d-4db2-8d10-24baae2c3d43',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2Fkit-distress-signals-6-to-12-miles.jpg?alt=media&token=26ff8d0e-1ba6-4401-a0e1-9e15e083ae29',
+  ],
+  [Products.Electrics]: [
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2F17A.jpeg?alt=media&token=d286416a-5f7a-4630-b638-955c3306b30d',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2F12A.jpeg?alt=media&token=c924c47f-ca06-4099-a491-a777ce625e43',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2F135SL.jpg?alt=media&token=1f4b5795-299a-47c0-adce-2dd0fab02451',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FVICTRON.jpg?alt=media&token=c649adb3-0071-47eb-acd2-d68c19696cb2',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FQUCIK.jpg?alt=media&token=bef716f5-b7ec-48bf-a888-b6654745201a',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FQUICK%20WINCH.jpg?alt=media&token=4f24f37a-317e-46a5-b528-3708619037d4',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FBEP.webp?alt=media&token=4fa11751-a45f-43a2-a57f-e6d70bba43e6',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FLUMITEC.jpg?alt=media&token=1e45c3b2-784b-4842-92a4-c9c82c5d3abb',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FJABSCO.jpg?alt=media&token=272b2412-e972-42a6-b229-a020790e2ab9',
+    'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/products%2FOPTIMA.webp?alt=media&token=3a9feb10-960f-4b04-ad17-6af4c91fa403',
+  ],
+};

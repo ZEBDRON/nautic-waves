@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
 import {
   Products,
+  ProductsImageMap,
   ProductsNameMap,
 } from 'src/app/core/constants/products.constants';
 
@@ -14,12 +15,15 @@ export class ProductsComponent implements OnInit {
   activePage = Products.Navigation;
   title = ProductsNameMap[this.activePage];
   productsMap = ProductsNameMap;
+  productsImageMap = ProductsImageMap;
+  images: string[] = [];
   constructor(private router: Router, private route: ActivatedRoute) {
     this.route.params.subscribe((params) => {
       console.log(params['page']);
       if (params['page']) {
         this.activePage = params['page'];
         this.title = ProductsNameMap[this.activePage];
+        this.images = ProductsImageMap[this.activePage];
       }
     });
   }
