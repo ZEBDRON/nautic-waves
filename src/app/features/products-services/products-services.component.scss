@@ -41,9 +41,6 @@
             flex-wrap: wrap;
             justify-content: space-evenly;
             .product {
-                background-size: contain;
-                background-position: center;
-                position: relative;
                 margin: 20px 0;
                 height: 450px;
                 width: 400px;
@@ -53,26 +50,33 @@
                 flex-direction: column;
                 align-items: flex-end;
                 cursor: pointer;
-                transition: transform 0.2s ease;
+
+                .product-image {
+                    height: 350px;
+                    width: 100%;
+                    object-fit: cover;
+                }
                 .product-header {
                     padding: 24px;
                     background: #fa6d02;
-                    position: absolute;
-                    animation: moveDown 1s forwards;
-                    font-family: "Manrope", sans-serif;
-                    font-size: 24px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 1.8rem;
-                    color: #fff; /* Dark gray */
+                    height: 100px;
+                    width: 100%;
+                    .heading {
+                        font-family: "Manrope", sans-serif;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 1.8rem;
+                        color: #fff; /* Dark gray */
+                    }
                 }
             }
-            .product:hover {
-                transform: scale(1.1);
-                .product-header {
-                    color: black;
-                }
-            }
+            // .product:hover {
+            //     transform: scale(1.1);
+            //     .product-header {
+            //         color: black;
+            //     }
+            // }
         }
     }
 }

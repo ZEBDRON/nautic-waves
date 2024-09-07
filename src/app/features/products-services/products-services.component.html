@@ -14,15 +14,11 @@
           class="product"
           *ngFor="let item of prodcuts"
           (click)="showProducts(item.page)"
-          [ngStyle]="{
-            'background-image': 'url(' + item.image + ')',
-            'background-repeat': 'no-repeat',
-            'background-size': 'cover'
-          }"
         >
           <div class="product-header">
-            {{ item.name }}
+            <div class="heading">{{ item.name }}</div>
           </div>
+          <img class="product-image" src="{{ item.image }}" alt="" />
         </div>
       </div>
     </div>
