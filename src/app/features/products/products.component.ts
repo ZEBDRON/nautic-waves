@@ -12,6 +12,7 @@ import {
   styleUrls: ['./products.component.scss'],
 })
 export class ProductsComponent implements OnInit {
+  products = Products;
   activePage = Products.Navigation;
   title = ProductsNameMap[this.activePage];
   productsMap = ProductsNameMap;

@@ -35,7 +35,7 @@ export const MajorBrands: Brand[] = [
   },
   {
     name: 'CAT',
-    logo: 'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/brands%2Fcat.png?alt=media&token=7e4325cf-4f02-48b7-8c9d-93f9dc6f6881',
+    logo: 'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/brands%2Fcaterpillar.jpg?alt=media&token=01234e56-71e7-41a7-bbc4-b9d8ccb89d56',
   },
   {
     name: 'Cummins Marine',
@@ -55,7 +55,7 @@ export const MajorBrands: Brand[] = [
   },
   {
     name: 'Motorola',
-    logo: 'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/brands%2Fmotorola.png?alt=media&token=a85ecf3f-9676-48b9-8a36-ad0e033ea5cf',
+    logo: 'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/brands%2Fmotorola.jpg?alt=media&token=b9d01f7c-ca4c-4da2-acad-bcb39024a24a',
   },
   {
     name: 'Quick Marine Lighting',
@@ -146,7 +146,7 @@ export const OtherBrands: Brand[] = [
   },
   {
     name: 'Mercury Marine',
-    logo: 'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/brands%2Fother%2Fmercury.jpg?alt=media&token=caaed8fb-1587-4699-a032-0d6350fde84e',
+    logo: 'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/brands%2Fother%2Fmercury.jpg?alt=media&token=7369a2d7-a826-4052-9a44-4b7651bdbd58',
   },
   {
     name: 'PLASTIMO',
@@ -178,7 +178,7 @@ export const OtherBrands: Brand[] = [
   },
   {
     name: 'Yamaha',
-    logo: 'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/brands%2Fother%2Fyamaha.png?alt=media&token=bd09a13c-2ef9-4556-ba18-3d8b3d39fedc',
+    logo: 'https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/brands%2Fother%2Fyamaha.jpg?alt=media&token=f55315c9-e457-49ae-9e8b-60cee304d32b',
   },
 ];
 

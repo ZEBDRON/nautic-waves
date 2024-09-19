@@ -8,7 +8,7 @@
     flex-direction: column;
     gap: 56px;
     padding: 40px;
-    margin-top: 85px;
+    margin-top: 100px;
     background-color: hsl(0, 0%, 92%);
     .heading-section {
         display: flex;
@@ -49,8 +49,8 @@
 
             .logo-image {
                 // border-radius: 50%; /* Sets the border radius to 50% of the element's width and height, creating a circle */
-                width: 200px; /* Adjust width as needed */
-                height: 100px; /* Adjust height as needed */
+                width: 160px; /* Adjust width as needed */
+                height: 80px; /* Adjust height as needed */
                 aspect-ratio: auto;
                 object-fit: fill;
                 transition: scaleLogo 1s ease; /* Smooth transition for transform property */
