@@ -14,6 +14,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 `npx angular-cli-ghpages --dir=docs`
 
+## Deploy to Firebase
+
+`firebase deploy --only hosting`
+
 # nautic-waves
 
 Nautic waves marine web app
