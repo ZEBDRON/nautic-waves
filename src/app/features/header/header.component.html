@@ -87,3 +87,51 @@
     </div>
   </div>
 </div>
+
+<div class="mobile-header-container">
+  <div class="left-container">
+    <div class="mobile-menu-icon" (click)="toggleMobileMenu()">
+      <i class="pi pi-bars" style="font-size: 24px"></i>
+    </div>
+    <div class="logo" routerLink="/">
+      <img
+        src="https://firebasestorage.googleapis.com/v0/b/nautic-waves.appspot.com/o/nwm-logo.png?alt=media&token=66c28e66-3322-441f-8858-6d5e88c794d5"
+        alt="logo"
+        class="logo-image"
+      />
+    </div>
+  </div>
+  <div class="right-container">
+    <div class="contact-section">
+      <div class="contact">
+        <div class="link">
+          <i class="pi pi-inbox" style="font-size: 1rem"></i>
+        </div>
+        <div class="text">
+          <a href="mailto:sales©nauticwavesmarine.com">
+            sales&#64;nauticwavesmarine.com</a
+          >
+        </div>
+      </div>
+      <div class="contact">
+        <div class="link">
+          <i class="pi pi-phone" style="font-size: 1rem"></i>
+        </div>
+        <div class="text">+971 50 677 5342</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p-sidebar [(visible)]="isMobileMenuOpen">
+  <div class="menu-container">
+    <div
+      class="menu"
+      *ngFor="let item of items"
+      [routerLink]="item.url"
+      routerLinkActive="selected"
+    >
+      <div class="menu-item">{{ item.label }}</div>
+    </div>
+  </div>
+</p-sidebar>

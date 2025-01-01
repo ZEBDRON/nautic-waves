@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ProductsServicesComponent } from './products-services/products-services.component';
 import { BrandsComponent } from './brands/brands.component';
 import { CarouselModule } from 'primeng/carousel';
+import { SidebarModule } from 'primeng/sidebar';
+import { TieredMenuModule } from 'primeng/tieredmenu';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,13 @@ import { CarouselModule } from 'primeng/carousel';
     ProductsServicesComponent,
     BrandsComponent,
   ],
-  imports: [CommonModule, BaseRoutingModule, CarouselModule],
+  imports: [
+    CommonModule,
+    BaseRoutingModule,
+    CarouselModule,
+    SidebarModule,
+    TieredMenuModule,
+  ],
   exports: [HomeComponent, HeaderComponent, FooterComponent],
 })
 export class BaseModule {}
