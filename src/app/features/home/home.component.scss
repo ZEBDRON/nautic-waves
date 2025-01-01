@@ -590,3 +590,226 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .home-container {
+        margin-top: 200px !important;
+        .vision-section {
+            .overlay-text {
+                top: 33%;
+                gap: 40px;
+                font-size: 28px;
+            }
+
+            .header-text {
+                font-size: 24px !important;
+            }
+
+            .sub-text {
+                font-size: 18px !important;
+                padding: 0 !important;
+                line-height: 28px !important;
+            }
+
+            img {
+                height: auto; /* Maintain aspect ratio */
+            }
+        }
+    }
+
+    .services-container {
+        flex-direction: column;
+        .first-service,
+        .second-service {
+            flex-direction: column;
+            gap: 20px !important;
+            align-items: center;
+            text-align: center;
+            max-height: none !important;
+            height: auto !important;
+
+            img {
+                height: auto;
+                width: 100%;
+            }
+
+            .service-content {
+                align-items: center;
+                padding: 16px 0 !important;
+
+                .service-title {
+                    font-size: 20px !important;
+                }
+
+                .service-text {
+                    font-size: 16px !important;
+                }
+            }
+        }
+    }
+
+    .products-section {
+        padding: 16px;
+
+        .heading-section {
+            padding: 16px;
+            .heading-text {
+                font-size: 24px !important;
+                text-align: center;
+                line-height: 32px !important;
+                margin-bottom: 16px !important;
+            }
+            .sub-text {
+                font-size: 16px !important;
+                text-align: center;
+                line-height: 24px !important;
+            }
+        }
+        .services-container {
+            gap: 24px;
+
+            .first-service,
+            .second-service {
+                padding: 16px;
+                .service-content {
+                    padding: 12px;
+                    .content {
+                        gap: 12px;
+
+                        .service-title {
+                            font-size: 18px;
+                        }
+
+                        .service-text {
+                            font-size: 14px;
+                            line-height: 1.5rem;
+                        }
+
+                        .equipments {
+                            gap: 6px !important; /* Reduced gap for compact layout */
+                            padding-left: 20px !important; /* Adjust padding for smaller screens */
+
+                            .equipment {
+                                gap: 6px !important; /* Reduce gap between dot and text */
+
+                                .dot {
+                                    width: 6px !important; /* Smaller dots */
+                                    height: 6px !important;
+                                }
+
+                                .product {
+                                    font-size: 16px !important; /* Adjust font size for smaller screens */
+                                    line-height: 1.6rem !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .brands-section {
+        padding: 20px;
+        gap: 40px;
+
+        .heading-section {
+            .heading-text {
+                font-size: 2rem;
+            }
+
+            .sub-text {
+                font-size: 16px;
+            }
+        }
+
+        .logo-section {
+            gap: 8px;
+
+            .logo-container {
+                gap: 12px;
+
+                .logo-image {
+                    width: 100px; /* Adjusted for smaller screens */
+                    height: 50px;
+                }
+
+                .logo-title {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .products-section {
+        .heading-section {
+            .heading-text {
+                font-size: 1.8rem;
+            }
+            .sub-text {
+                font-size: 14px;
+            }
+        }
+
+        .services-container {
+            .first-service,
+            .second-service {
+                gap: 12px;
+                img {
+                    height: auto;
+                }
+                .service-content {
+                    align-items: center !important;
+                    .content {
+                        .service-title {
+                            font-size: 16px;
+                        }
+                        .service-text {
+                            font-size: 12px;
+                        }
+                    }
+                    .product-btn {
+                        .btn-text {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .brands-section {
+        padding: 16px;
+        gap: 24px;
+
+        .heading-section {
+            .heading-text {
+                font-size: 1.8rem !important;
+            }
+
+            .sub-text {
+                font-size: 14px !important;
+                line-height: 20px !important;
+            }
+        }
+
+        .logo-section {
+            gap: 4px;
+
+            .logo-container {
+                gap: 8px;
+
+                .logo-image {
+                    width: 80px; /* Adjusted for extra small screens */
+                    height: 40px;
+                }
+
+                .logo-title {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

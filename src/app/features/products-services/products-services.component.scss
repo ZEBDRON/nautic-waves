@@ -91,3 +91,40 @@
         transform: translateY(100px); /* Final position */
     }
 }
+
+@media (max-width: 768px) {
+    .products-services-container {
+        margin-top: 200px !important;
+        .products-section {
+            padding: 16px !important;
+            .header {
+                .heading-text {
+                    font-size: 24px !important;
+                    text-align: center;
+                    line-height: 32px !important;
+                    margin-bottom: 16px !important;
+                }
+                .sub-text {
+                    font-size: 16px !important;
+                    text-align: center;
+                    line-height: 24px !important;
+                }
+            }
+            .products-container {
+                .product {
+                    height: auto !important;
+                    .product-image {
+                        height: auto !important;
+                    }
+                    .product-header {
+                        height: auto !important;
+                        .heading {
+                            font-size: 20px !important;
+                            line-height: 28px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

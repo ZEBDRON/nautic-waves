@@ -106,3 +106,24 @@
     @extend .brands-section;
     margin-top: 40px !important;
 }
+
+@media (max-width: 768px) {
+    .brands-section {
+        margin-top: 200px !important;
+
+        .heading-section {
+            padding: 16px !important;
+            .heading-text {
+                font-size: 24px !important;
+                text-align: center;
+                line-height: 32px !important;
+                margin-bottom: 16px !important;
+            }
+            .sub-text {
+                font-size: 16px !important;
+                text-align: center;
+                line-height: 24px !important;
+            }
+        }
+    }
+}
