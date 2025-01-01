@@ -337,8 +337,11 @@ p-sidebar {
 }
 
 @media (max-width: 768px) {
+    .header-container {
+        display: none;
+    }
     .mobile-header-container {
-        height: auto;
+        height: 200px;
         flex-direction: column;
         padding: 8px 20px;
     }
@@ -362,7 +365,7 @@ p-sidebar {
         .contact-section {
             flex-direction: column;
             align-items: center;
-            gap: 10px;
+            gap: 10px !important;
             .contact {
                 flex-direction: row;
                 gap: 5px;
