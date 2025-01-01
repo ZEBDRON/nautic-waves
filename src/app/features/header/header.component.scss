@@ -301,7 +301,7 @@ p-sidebar {
     .menu-container {
         display: flex;
         flex-direction: column; /* Stack items vertically */
-        gap: 10px; /* Space between items */
+        gap: 24px; /* Space between items */
         padding: 15px; /* Padding around the container */
     }
 
@@ -333,6 +333,12 @@ p-sidebar {
         background-color: #f0f0f0; /* Highlight selected item */
         color: #fff; /* White text for selected item */
         font-weight: bold; /* Make the selected item stand out */
+    }
+}
+
+::ng-deep {
+    .p-sidebar {
+        background-color: #000837 !important;
     }
 }
 
